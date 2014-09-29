@@ -1,65 +1,296 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta charset = "utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "description" content="The Fountain">
+    <meta name = "author" content="David Ayeke">
 
-    <title>Starter Template for Bootstrap</title>
+    <title> Welcome to The Fountain</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
   </head>
-
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!--Navbar -->
+   
+    <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">The Fountain</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Drinks</a></li>
+                    <li><a href="#">Vetarian</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Reservation</li>
+                    <li><a href="#">Make Reservation</a></li>
+                    <li><a href="#">Check Reservation</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+
       </div>
     </div>
 
-    <div class="container">
+    <!--Carousel-->
+    <div id="fountainCarousel" class="carousel slide" date-ride="carousel">
+      <!--Indicators -->
+      <ol class = "carousel-indicators">
+        <li data-target="#fountainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#fountainCarousel" data-slide-to="1"></li>
+       </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/fountain_bar.jpg" alt="The Fountain"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1> Welcome to the fountain</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Reserve a room today!</a></p>
+            </div>
+          </div>
+        </div>
+       <div class="item">
+          <img src="img/fountain_logo.jpg" alt="The Fountain"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome to The Fountain on Locus</hi>
+                <h6>The room you’re sitting in right now was constructed in 1916 as one of the many car showrooms of 
+Locust Street’s Historic Automotive Row.
+Our building housed The Supreme Car Co. which sold the Stutz Blackhawk and the Stutz Bearcat, both 
+considered top-of-the-line high performance sports sedans of the day. Typically, two cars were on display 
+and if you wanted one, they would build yours to order in the back garage space.
+Just like the care that went into each custom built Stutz, we create our own handcrafted ice cream sauces, 
+chocolates and delicious and unique freshly made-from-scratch foods. 
+Our entire staff shares the desire to serve you the highest quality food, drinks and dining experience. 
+We always say, “If you enjoyed your visit, please tell a friend. If you didn’t, please tell us!” 
+Whether you’re here for lunch or dinner, business or romance, be sure to try one of our signature Ice Cream 
+Martinis, Retro Cocktails or Champagne Floats. We invite you to sit in the west side bar booths to 
+listen to the only Restaurant Radio Comedy Serial, “Soap Hospital,” with a new episode every two minutes! We 
+want every visit you make to be an experience like no other, like The Fountain on Locust itself! 
+And always leave room for a special Fountain ice cream — voted St. Louis’ best!</h6>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            </div>
+          </div>
+        </div>   
+              <!--
+              -->
+        </div>
+        <a class="left carousel-control" href="#fountainCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></a>
+        <a class="right carousel-control" href="#fountainCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></a>
       </div>
 
-    </div><!-- /.container -->
+      <!--Menu-->
+      <div class = "container menu">
+        <div class="row">
+          <h2>Seasonal Coctails</h2>
+          <p>~Our Summer Offerints</p>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Pear Marmalade Fizz</h3>
+                <p>Our house infused pear vodka, St. Germaine 
+liqueur, rhubarb bitters and orange marmalade, 
+shaken over ice, in a martini glass rolled in 
+absinthe, with a splash of soda water 8.50</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Whiskey Kiss</h3>
+                <p>Bourbon, Ginger Liqueur, simple syrup and 
+fresh lemon juice shaken over ice. 8.00</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <h2>Signature Ice Cream Martinis</h2>
+          <p>All of our Ice Cream Martinis are fresly blended, decorated
+              and beautifully garnished to order. 8.550 unless noted</p>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Chocolate Covered Almond</h3>
+                <p>Amaretto, crème de cacao and Zanzibar 
+Chocolate ice cream</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Orange Dreamsicle Martini s</h3>
+                <p>Vanilla Vodka, Triple Sec, Orange Sherbet 
+and Vanilla ice cream</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <h2>Classic Retro Cocktails</h2>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Negroni</h3>
+                <p>Gin, Campari, sweet vermouth, served up with 
+a sugared orange peel 6.50</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Cuba Libr</h3>
+                <p>Silver rum, fresh squeezed lime juice and 
+coke served on the rocks 6.50</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <h2>Radio Comedy</h2>
+          <p>We invite you to sit in the west side bar booths to listen to the only Restaurant Radio Comedy Serial, “Soap 
+Hospital,” with a new episode every two minutes! There are about 400 of these hilarious little vignettes on a 
+continuous loop. Just turn up the white dial on the wall to listen or turn down to suffer in silence</p>
+        </div>
+         <div class="row">
+          <h2>Beer</h2>
+          <p>Ask your server about our craft beer seasonal selections</p>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Bud Light</h3>
+                <p>The skinnier King (St. Louis, MO) 3.00</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Crispin Original Hard Cider </h3>
+                <p>All natural, gluten free, dry cider. Doesn’t taste 
+like a hangover, like some of its competitors!
+(Minneapolis, MN) 5.00</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <h2>Main Fare Plates</h2>
+          <p>Plates are served with your choice of a generous side unless otherwise noted. 
+Substitute gluten free bread for an additional charge</p>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Signature Mixed Salad Sandwich</h3>
+                <p>With or without chicken, our delicious blend of 
+melted mozzarella and parmesan cheese, 
+artichoke, mixed lettuces, tomato, roasted red 
+pepper, red onion and house-made pesto dressing, 
+served on fresh baked baguette w/side
+without chicken 8.59 With chicken add 1.99</p>
+              </li>
+              <li>
+                <img src="img/sides.png" alt="Sides"/>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Hot Roast Beef Melt</h3>
+                <p>Sliced savory Certified Angus Beef with melted 
+white cheddar, rosemary grilled onions and 
+tangy house-made horseradish sauce on baked 
+baguette w/side 9.99</p>
+              </li>
+
+              <li>
+                <img src="img/pick2.png" alt="Sides"/>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <h2>Sodas and Ice Cream</h2>
+          <h3>Drink House-Made Sodas</h3>
+          <p>Why drink a commercial soda when you can have a pure old -fashioned phosphate soda?
+All high fructose and corn syrup-free. The original soda fountain drink! 2.29 (refills 1.00)</p>
+          <img src="img/sodaflavors.png" alt="Sides"/>
+          <p>Commercial Cola made with real sugar, not high fructose corn syrup, 
+sugar free Diet Cola, Lemon Lime 2.29 (free refills)</p>
+
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Egg Creams</h3>
+                <p>An exclusive fountain drink made with your choice 
+of flavored syrup, light cream and bubbly seltzer 
+2.49</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <ul>
+              <li>
+                <h3>Ice Cream Soda</h3>
+                <p>Tall glass filled with a generous portion of 
+Vanilla Deluxe ice cream and your choice of
+ house made soda flavors 4.29</p>
+              </li>
+            </ul>
+          </div>
 
 
-    <!-- Bootstrap core JavaScript
+        </div>
+
+        <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p> 2014 The Fountain. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+      
+      </div>
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js">
   </body>
+
 </html>
