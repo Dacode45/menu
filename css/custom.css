@@ -74,18 +74,16 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.menu {
+#marketing {
   margin-bottom: 20px;
   text-align: center;
+  background: rgba(0,0,0,.9);
   color: white;
 }
-.menu h2,p {
+/
+#marketing h2,p {
   font-weight: normal;
 
-}
-
-.menu ul{
-  background: rgba(255,255,255,.5);
 }
 
 
@@ -104,7 +102,32 @@ body {
   letter-spacing: -1px;
 }
 
+.customMenu{
+	background:white;
+}
 
+#affix-nav{
+	right:80px;
+	float: right;
+	display: block;
+}
+
+#affix-nav.affix-top {
+	
+    position: static;
+    margin-top:60px;
+    width:228px;
+  }
+
+  #affix-nav.affix {
+    
+    position: fixed;
+    top:150px;
+    width:228px;
+	float: right;
+	margin-right:auto;
+	
+  }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

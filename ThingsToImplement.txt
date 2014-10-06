@@ -1,0 +1,4 @@
+Create a single page for scrolling using affix.js //bootstrap
+or
+Link multiple pages together
+change active elemments and links 
