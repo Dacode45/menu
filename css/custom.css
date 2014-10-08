@@ -106,31 +106,20 @@ body {
 	background:white;
 }
 
-#affix-nav{
-	right:80px;
-	float: right;
-	display: block;
-}
-
-#affix-nav.affix-top {
-	
-    position: static;
-    margin-top:60px;
-    width:228px;
-  }
-
-  #affix-nav.affix {
-    
-    position: fixed;
-    top:150px;
-    width:228px;
-	float: right;
-	margin-right:auto;
-	
-  }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+
+/* Menu NAVBAR
+---------------------------------------------------*/
+#affix-nav{
+	background:white;
+	z-index: 1000;
+
+}
+#affix-nav.affix{
+	top:0px;
+}
 
 @media (min-width: 768px) {
 
